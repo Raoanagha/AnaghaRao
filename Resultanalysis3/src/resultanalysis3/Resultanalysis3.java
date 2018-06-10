@@ -45,18 +45,7 @@ public static void main(String args[])
                break;
         case 4: c.classtopper();
                break;
-        case 5:c.mathtopper();
-                c.mmctopper();
-                c.dbmstopper();
-                c.ostopper();
-                c.daatopper(); 
-               break;
-        case 6:c.classpass();
-               break;
-        case 7:c.subjpass();
-                break;
-        default:System.out.println("INVALID OPTION");
-                break;
+        
     }
     }        
 }    
