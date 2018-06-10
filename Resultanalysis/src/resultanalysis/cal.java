@@ -154,4 +154,90 @@ public class cal
                System.out.println("MARKS SCORED: "+max);
               
             }
+            
+             /**
+             *This method finds out the student securing highest marks in math<br>
+             * mathmax-marks of the student securing highest marks in math<br>
+             * mathtopper-name of the student securing highest marks in math<br>
+             * mathtopperroll-rollno of the student securing highest marks in math
+             */
+             
+            public void mathtopper()
+            {
+                
+              
+           System.out.println("HIGHEST SCORER OF EVERY SUBJECT");
+           System.out.println("SUBJECT   " + "NAME  " + "    ROLL NO  " + "MARKS SCORED ");
+                 mathmax=math[0];
+                 
+                for ( i = 1; i < n; i++)
+            {
+                
+     		if (math[i]>mathmax)
+		 {
+			mathmax= math[i];
+                        mathtopper = name[i];
+                        mathtopperroll=roll[i];
+                 }
+                
+             }
+               System.out.println("MATH   " + "   "+mathtopper + "         "+mathtopperroll + "     "+mathmax );
+             
+            }
+            
+            /**
+             *This method finds out the student securing highest marks in mmc<br>
+             * mmcmax-marks of the student securing highest marks in mmc<br>
+             * mmctopper-name of the student securing highest marks in mmc<br>
+             * mmctopperroll-rollno of the student securing highest marks in mmc
+             */
+            
+              public void mmctopper()
+            {
+                
+              
+               
+                 mmcmax=mmc[0];
+                 
+                for ( i = 1; i < n; i++)
+            {
+                
+     		if (mmc[i]>mmcmax)
+		 {
+			mmcmax= mmc[i];
+                        mmctopper = name[i];
+                        mmctopperroll=roll[i];
+                 }
+                
+             }
+                System.out.println("MMC    " + "   "+mmctopper + "         "+mmctopperroll + "     "+mmcmax );
+            }
+              
+              
+              /**
+             *This method finds out the student securing highest marks in dbms<br>
+             * dbmsmax-marks of the student securing highest marks in dbms<br>
+             * dbmstopper-name of the student securing highest marks in dbms<br>
+             * dbmstopperroll-rollno of the student securing highest marks in dbms<br>
+             */
+                public void dbmstopper()
+            {
+                
+               
+                 dbmsmax=math[0];
+                 
+                for ( i = 1; i < n; i++)
+            {
+                
+     		if (dbms[i]>dbmsmax)
+		 {
+			dbmsmax= dbms[i];
+                        dbmstopper = name[i];
+                        dbmstopperroll=roll[i];
+                 }
+                
+             }
+                System.out.println("DBMS   " + "   "+dbmstopper + "         "+dbmstopperroll + "     "+dbmsmax );
+            }
+            
 }
