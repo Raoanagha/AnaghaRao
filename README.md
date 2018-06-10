@@ -2,9 +2,9 @@
                                                 
                                                 
 
-overview :  
-            This project takes the students records as input and calculates the class topper, subject topper, pass/fail percentage in class 
-            and subject wise pass/fail percentage in class as an output, Which helps us to reduce the time and tedious work.
+Overview :  
+            This project takes the students' records as input and calculates the class topper, subject topper, pass/fail percentage in class 
+            and subject wise pass/fail percentage in class and gives the output as desired. It helps to reduce the time and tedious work invloved in manual calculations and maintaining manual records
                       
 Features :
 
@@ -39,8 +39,8 @@ REQUIREMENTS :
 
 MOTIVATION : 
 
-            We have noticed how it is a meticulous and tedious job to collect and organise results of students. This motivates us to take
-            up this project, so we could simplify, quicken and computerize the process. It helps us reduce the number of errors and fasten
+            We have noticed how it is a meticulous and tedious job to collect and organise results of students. This motivated us to take
+            up the project, so we could simplify, quicken and computerize the process. It helps us reduce the number of errors and fasten
             the process significantly.
           
             
