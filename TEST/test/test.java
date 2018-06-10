@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -95,4 +100,53 @@ public class test
          assertEquals(500,a.dbmstopper(100,500,30,270,300));
          assertEquals(350,a.dbmstopper(70,200,100,350,300));
      }
+           
+             @Test
+               public void daatopper()
+     {
+         assertEquals(600,a.daatopper(100,500,250,27,600));
+         assertEquals(300,a.daatopper(70,200,100,250,300));
+     }
+               
+               @Test
+                 public void ostopper()
+     {
+        assertEquals(100,a.ostopper(100,50,30,27,60));
+         assertEquals(350,a.ostopper(70,200,100,350,300));
+     }
+                 
+                 @Test
+                 public void mathsubjpass()
+                 {
+                     assertEquals(0,a.mathsubjpass(56));
+                     assertEquals(1,a.mathsubjpass(20));
+                 }
+                 
+                 @Test
+                  public void mmcsubjpass()
+                 {
+                     assertEquals(0,a.mmcsubjpass(56));
+                     assertEquals(1,a.mmcsubjpass(20));
+                 }
+                  
+                  @Test
+                   public void daasubjpass()
+                 {
+                     assertEquals(0,a.daasubjpass(56));
+                     assertEquals(1,a.daasubjpass(20));
+                 }
+                   
+                   @Test
+                    public void dbmssubjpass()
+                 {
+                     assertEquals(0,a.dbmssubjpass(56));
+                     assertEquals(1,a.dbmssubjpass(20));
+                 }
+                    
+                    @Test
+                     public void ossubjpass()
+                 {
+                     assertEquals(0,a.ossubjpass(56));
+                     assertEquals(1,a.ossubjpass(20));
+                 }
 }
