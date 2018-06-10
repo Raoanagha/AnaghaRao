@@ -200,5 +200,133 @@ class result {
               
              
             }
-}
     
+    
+     public int daatopper(int s1,int s2,int s3,int s4,int s5)
+            {
+               int i;
+               int max ;
+               int[] s={s1,s2,s3,s4,s5}; ;
+              
+               s[0]=s1;
+               s[1]=s2;
+               s[2]=s3;
+               s[3]=s4;
+               s[4]=s5;
+               max=s1;
+               
+               for(i=1;i<5;i++)
+               {
+                 if(s[i]>max)
+               {
+                   max=s[i];
+                   
+               }
+               }
+                   
+              return max;
+              
+               
+              
+             
+            }
+    
+     public int ostopper(int s1,int s2,int s3,int s4,int s5)
+            {
+               int i;
+               int max ;
+               int[] s={s1,s2,s3,s4,s5}; ;
+              
+               s[0]=s1;
+               s[1]=s2;
+               s[2]=s3;
+               s[3]=s4;
+               s[4]=s5;
+               max=s1;
+               
+               for(i=1;i<5;i++)
+               {
+                 if(s[i]>max)
+               {
+                   max=s[i];
+                   
+               }
+               }
+                   
+              return max;
+              
+               
+              
+             
+            }
+    
+    
+
+            public int mathsubjpass(int m)
+            {
+                 math = m;
+           
+                     if(math<35)
+                     return 1;
+                     else
+                         return 0;
+
+                }
+
+            public int mmcsubjpass(int m)
+            {
+                 mmc = m;
+           
+                     if(mmc<35)
+                     return 1;
+                     else
+                         return 0;
+
+                }
+            
+            public int ossubjpass(int m)
+            {
+                 os = m;
+           
+                     if(os<35)
+                     return 1;
+                     else
+                         return 0;
+
+                }
+            
+            public int daasubjpass(int m)
+            {
+                 daa = m;
+           
+                     if(daa<35)
+                     return 1;
+                     else
+                         return 0;
+
+                }
+            
+            public int dbmssubjpass(int m)
+            {
+                 dbms = m;
+           
+                     if(dbms<35)
+                     return 1;
+                     else
+                         return 0;
+
+                }
+
+
+
+
+
+
+
+	
+            }
+               
+        
+
+    
+
