@@ -1,3 +1,4 @@
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -67,7 +68,31 @@ public class test
          assertEquals(350,a.classtopper(70,200,100,350,300));
      }
       
-     
-      
+      @Test
+       public void classpass()
+     {
+         assertEquals(1,a.classpass(300));
+          assertEquals(0,a.classpass(150));
+     }
+       
+       @Test
+         public void mathtopper()
+     {
+         assertEquals(250,a.mathtopper(100,50,30,250,60));
+         assertEquals(350,a.mathtopper(250,20,100,350,30));
+     }
+         
+         @Test
+           public void mmctopper()
+     {
+         assertEquals(200,a.mmctopper(200,50,30,27,60));
+         assertEquals(300,a.mmctopper(70,100,100,150,300));
+     }
+          
+           @Test
+             public void dbmstopper()
+     {
+         assertEquals(500,a.dbmstopper(100,500,30,270,300));
+         assertEquals(350,a.dbmstopper(70,200,100,350,300));
+     }
 }
-           
