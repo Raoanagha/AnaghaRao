@@ -1,4 +1,4 @@
-package resultanalysis;
+package resultanalysis1;
 
 import java.util.Scanner;
 
