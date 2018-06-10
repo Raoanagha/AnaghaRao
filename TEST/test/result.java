@@ -103,7 +103,102 @@ class result {
              
             }
 
-}
-
+    public int classpass(int i) 
+    {
+        
+            int sum=i;
+            if(sum>175)
+                return 1;
+            else
+                return 0;
+    }
     
+    
+   public int mathtopper(int s1,int s2,int s3,int s4,int s5)
+            {
+               int i;
+               int max ;
+               int[] s={s1,s2,s3,s4,s5}; ;
+              
+               s[0]=s1;
+               s[1]=s2;
+               s[2]=s3;
+               s[3]=s4;
+               s[4]=s5;
+               max=s1;
+               
+               for(i=1;i<5;i++)
+               {
+                 if(s[i]>max)
+               {
+                   max=s[i];
+                   
+               }
+               }
+                   
+              return max;
+              
+               
+              
+             
+            }
+
+     public int mmctopper(int s1,int s2,int s3,int s4,int s5)
+            {
+               int i;
+               int max ;
+               int[] s={s1,s2,s3,s4,s5}; ;
+              
+               s[0]=s1;
+               s[1]=s2;
+               s[2]=s3;
+               s[3]=s4;
+               s[4]=s5;
+               max=s1;
+               
+               for(i=1;i<5;i++)
+               {
+                 if(s[i]>max)
+               {
+                   max=s[i];
+                   
+               }
+               }
+                   
+              return max;
+              
+               
+              
+             
+            }
+    
+    public int dbmstopper(int s1,int s2,int s3,int s4,int s5)
+            {
+               int i;
+               int max ;
+               int[] s={s1,s2,s3,s4,s5}; ;
+              
+               s[0]=s1;
+               s[1]=s2;
+               s[2]=s3;
+               s[3]=s4;
+               s[4]=s5;
+               max=s1;
+               
+               for(i=1;i<5;i++)
+               {
+                 if(s[i]>max)
+               {
+                   max=s[i];
+                   
+               }
+               }
+                   
+              return max;
+              
+               
+              
+             
+            }
+}
     
