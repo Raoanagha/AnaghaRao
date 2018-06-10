@@ -1,3 +1,4 @@
+
 package resultanalysis;
 
 import java.util.Scanner;
@@ -154,8 +155,7 @@ public class cal
                System.out.println("MARKS SCORED: "+max);
               
             }
-            
-             /**
+            /**
              *This method finds out the student securing highest marks in math<br>
              * mathmax-marks of the student securing highest marks in math<br>
              * mathtopper-name of the student securing highest marks in math<br>
@@ -239,5 +239,155 @@ public class cal
              }
                 System.out.println("DBMS   " + "   "+dbmstopper + "         "+dbmstopperroll + "     "+dbmsmax );
             }
+                
+                /**
+             *This method finds out the student securing highest marks in os<br>
+             * osmax-marks of the student securing highest marks in os<br>
+             * ostopper-name of the student securing highest marks in os<br>
+             * ostopperroll-rollno of the student securing highest marks in os<br>
+             */
+                  public void ostopper()
+            {
+                
+              
+               
+                 osmax=math[0];
+                 
+                for ( i = 1; i < n; i++)
+            {
+                
+     		if (os[i]>osmax)
+		 {
+			osmax= os[i];
+                        ostopper = name[i];
+                        ostopperroll=roll[i];
+                 }
+                
+             }
+               System.out.println("OS     " + "   "+ostopper + "         "+ostopperroll + "     "+osmax );
+            }
+                 
+                  
+                  /**
+             *This method finds out the student securing highest marks in daa<br>
+             * daamax-marks of the student securing highest marks in daa<br>
+             * daatopper-name of the student securing highest marks in daa<br>
+             * daatopperroll-rollno of the student securing highest marks in daa
+             */
+                  
+                    public void daatopper()
+            {
+               
+              
+               
+                 daamax=daa[0];
+                 
+                for ( i = 1; i < n; i++)
+            {
+                
+     		if (daa[i]>daamax)
+		 {
+			daamax= daa[i];
+                        daatopper = name[i];
+                        daatopperroll=roll[i];
+                 }
+                
+             }
+               System.out.println("DAA    " + "   "+daatopper + "         "+daatopperroll + "     "+daamax );
+            }
+                    
+             /**
+              * This method calculates the percentage of pass and fail in the class<br>
+              * sum[]-Sum of total marks of every student
+              */
+           
             
+            public void classpass()
+            {
+                for(i=0;i<n;i++)
+              {
+
+                  if(sum[i]>175)
+                  p++;
+              }
+                
+                 System.out.println("The percentage of students who failed in the class is: "+((n-p)*100)/n+"%");
+                 System.out.println("The percentage of students who passed in the class is: "+(p*100)/n+"%");
+            }
+            
+            /**
+             * This method calculates the percentage of pass and fail in every subject<br>
+             * f1-counter to calculate the number of students failing in math<br>
+             * f2-counter to calculate the number of students failing in mmc<br>
+             * f3-counter to calculate the number of students failing in dbms<br>
+             * f4-counter to calculate the number of students failing in os<br>
+             * f5-counter to calculate the number of students failing in daa
+             * 
+            
+             */
+            
+            public void subjpass()
+            {
+                 
+                 System.out.println("SUBJECT      " + "  FAIL   " + "PASS"); 
+                for(i=0;i<n;i++)
+                {
+                     if(math[i]<35)
+                     f1++;
+
+                }
+
+                 System.out.println("MATHS    : " + "    "+(f1*100)/n+"%" + "   " +((n-f1)*100)/n+"%");
+                
+                 
+                
+
+                for(i=0;i<n;i++)
+                {
+                     if(mmc[i]<35)
+                     f2++;
+
+                }
+
+                 System.out.println("MMC      : "+"    "+(f2*100)/n+"%" + "   " +((n-f2)*100)/n+"%");
+                
+
+                 
+                  
+
+                for(i=0;i<n;i++)
+                {
+                     if(dbms[i]<35)
+                     f3++;
+
+                }
+
+                System.out.println("DBMS     : "+"    "+(f3*100)/n+"%" + "   " +((n-f3)*100)/n+"%");
+
+                 
+                 
+                for(i=0;i<n;i++)
+                {
+                     if(os[i]<35)
+                     f4++;
+
+                }
+
+               System.out.println("OS       : "+"    "+(f4*100)/n+"%" + "   " +((n-f4)*100)/n+"%");
+
+                
+
+                for(i=0;i<n;i++)
+                {
+                     if(daa[i]<35)
+                     f5++;
+
+                }
+
+                 System.out.println("DAA      : "+"    "+(f5*100)/n+"%" + "   " +((n-f5)*100)/n+"%");
+            }
+            
+            
+    
+    
 }
