@@ -7,13 +7,6 @@ package resultanalysis3;
 import java.util.Scanner;
 
 
-/**
- * 
- * 
- * This is a public class which contains the main class in it<br>
- * The main class is menu driven<br>
- * It contains all the method calls 
- */
 
 public class Resultanalysis3
 {
@@ -44,8 +37,19 @@ public static void main(String args[])
         case 3:c.total();
                break;
         case 4: c.classtopper();
+               break; 
+        case 5:c.mathtopper();
+                c.mmctopper();
+                c.dbmstopper();
+                c.ostopper();
+                c.daatopper(); 
                break;
-        
+        case 6:c.classpass();
+               break;
+        case 7:c.subjpass();
+                break;
+        default:System.out.println("INVALID OPTION");
+                break;
     }
     }        
 }    
